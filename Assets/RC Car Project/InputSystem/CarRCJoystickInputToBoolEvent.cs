@@ -35,28 +35,28 @@ public class CarRCJoystickInputToBoolEvent : MonoBehaviour
     private void Awake()
     {
         controls = new CarRCJoystickInput();
-        controls.CarRCKeyboardAll.LeftForward.performed += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.LeftForward.performed += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_leftForward, context);
         };
-        controls.CarRCKeyboardAll.LeftBackward.performed += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.LeftBackward.performed += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_leftBackward, context);
         };
-        controls.CarRCKeyboardAll.RightForward.performed += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.RightForward.performed += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_rightForward, context);
         };
-        controls.CarRCKeyboardAll.RightBackward.performed += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.RightBackward.performed += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_rightBackward, context);
         };
-        controls.CarRCKeyboardAll.LeftForward.canceled += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.LeftForward.canceled += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_leftForward, context);
         };
-        controls.CarRCKeyboardAll.LeftBackward.canceled += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.LeftBackward.canceled += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_leftBackward, context);
         };
-        controls.CarRCKeyboardAll.RightForward.canceled += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.RightForward.canceled += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_rightForward, context);
         };
-        controls.CarRCKeyboardAll.RightBackward.canceled += (InputAction.CallbackContext context) => {
+        controls.CarRCFourBoolAll.RightBackward.canceled += (InputAction.CallbackContext context) => {
             CheckForChange(ref m_rightBackward, context);
         };
     }

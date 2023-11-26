@@ -69,7 +69,15 @@ public class ConvertTankFourInputToArrowMono : MonoBehaviour
         }
         else if (!m_leftForward && m_leftBackward && m_rightForward && !m_rightBackward)
         {
-            m_up = false; m_down = false; m_left = true; m_right = true;
+            m_up = false; m_down = false; m_left = true; m_right = false;
+        }//Right from backward
+        else if (!m_leftForward && !m_leftBackward && !m_rightForward && m_rightBackward)
+        {
+            m_up = false; m_down = false; m_left = false; m_right = true;
+        }//Left from backward
+        else if (!m_leftForward && m_leftBackward && !m_rightForward && !m_rightBackward)
+        {
+            m_up = false; m_down = false; m_left = true; m_right = false;
         }
         else {
             //Nothing

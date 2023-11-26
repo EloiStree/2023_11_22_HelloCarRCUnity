@@ -2,7 +2,7 @@
     "name": "CarRCJoystickInput",
     "maps": [
         {
-            "name": "CarRCKeyboardAll",
+            "name": "CarRCFourBoolAll",
             "id": "b0861c05-f103-4e73-a664-f04756d3fc7e",
             "actions": [
                 {

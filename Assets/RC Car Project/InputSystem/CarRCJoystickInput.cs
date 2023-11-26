@@ -24,7 +24,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
     ""name"": ""CarRCJoystickInput"",
     ""maps"": [
         {
-            ""name"": ""CarRCKeyboardAll"",
+            ""name"": ""CarRCFourBoolAll"",
             ""id"": ""b0861c05-f103-4e73-a664-f04756d3fc7e"",
             ""actions"": [
                 {
@@ -466,12 +466,12 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // CarRCKeyboardAll
-        m_CarRCKeyboardAll = asset.FindActionMap("CarRCKeyboardAll", throwIfNotFound: true);
-        m_CarRCKeyboardAll_LeftForward = m_CarRCKeyboardAll.FindAction("LeftForward", throwIfNotFound: true);
-        m_CarRCKeyboardAll_LeftBackward = m_CarRCKeyboardAll.FindAction("LeftBackward", throwIfNotFound: true);
-        m_CarRCKeyboardAll_RightForward = m_CarRCKeyboardAll.FindAction("RightForward", throwIfNotFound: true);
-        m_CarRCKeyboardAll_RightBackward = m_CarRCKeyboardAll.FindAction("RightBackward", throwIfNotFound: true);
+        // CarRCFourBoolAll
+        m_CarRCFourBoolAll = asset.FindActionMap("CarRCFourBoolAll", throwIfNotFound: true);
+        m_CarRCFourBoolAll_LeftForward = m_CarRCFourBoolAll.FindAction("LeftForward", throwIfNotFound: true);
+        m_CarRCFourBoolAll_LeftBackward = m_CarRCFourBoolAll.FindAction("LeftBackward", throwIfNotFound: true);
+        m_CarRCFourBoolAll_RightForward = m_CarRCFourBoolAll.FindAction("RightForward", throwIfNotFound: true);
+        m_CarRCFourBoolAll_RightBackward = m_CarRCFourBoolAll.FindAction("RightBackward", throwIfNotFound: true);
         // CarRCJoystickArrowAsInput
         m_CarRCJoystickArrowAsInput = asset.FindActionMap("CarRCJoystickArrowAsInput", throwIfNotFound: true);
         m_CarRCJoystickArrowAsInput_LeftForward = m_CarRCJoystickArrowAsInput.FindAction("LeftForward", throwIfNotFound: true);
@@ -542,30 +542,30 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // CarRCKeyboardAll
-    private readonly InputActionMap m_CarRCKeyboardAll;
-    private List<ICarRCKeyboardAllActions> m_CarRCKeyboardAllActionsCallbackInterfaces = new List<ICarRCKeyboardAllActions>();
-    private readonly InputAction m_CarRCKeyboardAll_LeftForward;
-    private readonly InputAction m_CarRCKeyboardAll_LeftBackward;
-    private readonly InputAction m_CarRCKeyboardAll_RightForward;
-    private readonly InputAction m_CarRCKeyboardAll_RightBackward;
-    public struct CarRCKeyboardAllActions
+    // CarRCFourBoolAll
+    private readonly InputActionMap m_CarRCFourBoolAll;
+    private List<ICarRCFourBoolAllActions> m_CarRCFourBoolAllActionsCallbackInterfaces = new List<ICarRCFourBoolAllActions>();
+    private readonly InputAction m_CarRCFourBoolAll_LeftForward;
+    private readonly InputAction m_CarRCFourBoolAll_LeftBackward;
+    private readonly InputAction m_CarRCFourBoolAll_RightForward;
+    private readonly InputAction m_CarRCFourBoolAll_RightBackward;
+    public struct CarRCFourBoolAllActions
     {
         private @CarRCJoystickInput m_Wrapper;
-        public CarRCKeyboardAllActions(@CarRCJoystickInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @LeftForward => m_Wrapper.m_CarRCKeyboardAll_LeftForward;
-        public InputAction @LeftBackward => m_Wrapper.m_CarRCKeyboardAll_LeftBackward;
-        public InputAction @RightForward => m_Wrapper.m_CarRCKeyboardAll_RightForward;
-        public InputAction @RightBackward => m_Wrapper.m_CarRCKeyboardAll_RightBackward;
-        public InputActionMap Get() { return m_Wrapper.m_CarRCKeyboardAll; }
+        public CarRCFourBoolAllActions(@CarRCJoystickInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @LeftForward => m_Wrapper.m_CarRCFourBoolAll_LeftForward;
+        public InputAction @LeftBackward => m_Wrapper.m_CarRCFourBoolAll_LeftBackward;
+        public InputAction @RightForward => m_Wrapper.m_CarRCFourBoolAll_RightForward;
+        public InputAction @RightBackward => m_Wrapper.m_CarRCFourBoolAll_RightBackward;
+        public InputActionMap Get() { return m_Wrapper.m_CarRCFourBoolAll; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(CarRCKeyboardAllActions set) { return set.Get(); }
-        public void AddCallbacks(ICarRCKeyboardAllActions instance)
+        public static implicit operator InputActionMap(CarRCFourBoolAllActions set) { return set.Get(); }
+        public void AddCallbacks(ICarRCFourBoolAllActions instance)
         {
-            if (instance == null || m_Wrapper.m_CarRCKeyboardAllActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_CarRCKeyboardAllActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_CarRCFourBoolAllActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_CarRCFourBoolAllActionsCallbackInterfaces.Add(instance);
             @LeftForward.started += instance.OnLeftForward;
             @LeftForward.performed += instance.OnLeftForward;
             @LeftForward.canceled += instance.OnLeftForward;
@@ -580,7 +580,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
             @RightBackward.canceled += instance.OnRightBackward;
         }
 
-        private void UnregisterCallbacks(ICarRCKeyboardAllActions instance)
+        private void UnregisterCallbacks(ICarRCFourBoolAllActions instance)
         {
             @LeftForward.started -= instance.OnLeftForward;
             @LeftForward.performed -= instance.OnLeftForward;
@@ -596,21 +596,21 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
             @RightBackward.canceled -= instance.OnRightBackward;
         }
 
-        public void RemoveCallbacks(ICarRCKeyboardAllActions instance)
+        public void RemoveCallbacks(ICarRCFourBoolAllActions instance)
         {
-            if (m_Wrapper.m_CarRCKeyboardAllActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_CarRCFourBoolAllActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(ICarRCKeyboardAllActions instance)
+        public void SetCallbacks(ICarRCFourBoolAllActions instance)
         {
-            foreach (var item in m_Wrapper.m_CarRCKeyboardAllActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_CarRCFourBoolAllActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_CarRCKeyboardAllActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_CarRCFourBoolAllActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public CarRCKeyboardAllActions @CarRCKeyboardAll => new CarRCKeyboardAllActions(this);
+    public CarRCFourBoolAllActions @CarRCFourBoolAll => new CarRCFourBoolAllActions(this);
 
     // CarRCJoystickArrowAsInput
     private readonly InputActionMap m_CarRCJoystickArrowAsInput;
@@ -751,7 +751,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
         }
     }
     public CarRCJoystickvJoyActions @CarRCJoystickvJoy => new CarRCJoystickvJoyActions(this);
-    public interface ICarRCKeyboardAllActions
+    public interface ICarRCFourBoolAllActions
     {
         void OnLeftForward(InputAction.CallbackContext context);
         void OnLeftBackward(InputAction.CallbackContext context);

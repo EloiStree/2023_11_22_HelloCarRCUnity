@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3130029, g: 0.5501603, b: 0.8220557, a: 1}
+  m_IndirectSpecularColor: {r: 0.49633738, g: 0.49633738, b: 0.49633738, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &400913907
 Transform:
   m_ObjectHideFlags: 0
@@ -801,13 +801,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400913906}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15, y: 1.37, z: 2.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1845371755}
-  m_Father: {fileID: 454844441}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &453753817
 PrefabInstance:
@@ -885,257 +885,6 @@ PrefabInstance:
       addedObject: {fileID: 1261073044793567346}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58011bca9681c484080084eccc4cb150, type: 3}
---- !u!1 &454844440
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 454844441}
-  - component: {fileID: 454844442}
-  - component: {fileID: 454844443}
-  - component: {fileID: 454844444}
-  - component: {fileID: 454844446}
-  - component: {fileID: 454844445}
-  m_Layer: 0
-  m_Name: Car RC
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &454844441
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454844440}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 1.37, z: 2.002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1161410009}
-  - {fileID: 400913907}
-  - {fileID: 1308148263}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &454844442
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454844440}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &454844443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454844440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87503f4b0b118d8469596359f8207301, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_whatToMove: {fileID: 454844441}
-  m_timepast: 0
-  m_carSpeedPerSecond: 0.3
-  m_rotationPerSecondAsAngle: 180
-  m_makeCarMoveForward: 0
-  m_makeCarMoveBackward: 0
-  m_makeCarRotateLeft: 0
-  m_makeCarRotateRigh: 0
---- !u!114 &454844444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454844440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f07f0c527f6164cb8eb4d9bc5b6394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_leftForward: 263
-  m_leftBackward: 260
-  m_rightForward: 265
-  m_rightBackward: 262
-  m_onLeftForward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationLeft
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onLeftBackward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveForward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onRightForward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationRight
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onRightBackward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveBackward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &454844445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454844440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f9ebdbfe8dc8204987b195aae9f7c52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_up: 273
-  m_down: 274
-  m_left: 276
-  m_right: 275
-  m_onUp:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveForward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onDown:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveBackward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onLeft:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationLeft
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onRight:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationRight
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &454844446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454844440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf7d00fa9345b9d4a90f1aeefa4f720a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listenToJoystick1Button1: 0
 --- !u!1 &465102248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3032334164735723895, guid: 66d40221d132d04499855da9ce315f20, type: 3}
@@ -1151,111 +900,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7158865763779469689, guid: 66d40221d132d04499855da9ce315f20, type: 3}
   m_PrefabInstance: {fileID: 1364055689}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &565558929
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 565558930}
-  - component: {fileID: 565558933}
-  - component: {fileID: 565558932}
-  - component: {fileID: 565558931}
-  m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &565558930
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565558929}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00002892315}
-  m_LocalPosition: {x: 0, y: 0.0224, z: 0}
-  m_LocalScale: {x: 0.06742489, y: 0.003161014, z: 0.06742489}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1161410009}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.997, z: 0}
---- !u!65 &565558931
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565558929}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &565558932
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565558929}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ceb1ebc189859f24986344015a91f936, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &565558933
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565558929}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &593050027 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7752563439712129205, guid: 66d40221d132d04499855da9ce315f20, type: 3}
@@ -1692,72 +1336,6 @@ Transform:
   - {fileID: 2059012672}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &948579419
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1161410009}
-    m_Modifications:
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.010383997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.04935
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.04519999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071066
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.70710707
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015918679639073035, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_Name
-      value: RC Car Wheel (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
---- !u!4 &948579420 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-  m_PrefabInstance: {fileID: 948579419}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &985866601 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4968769839778511794, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
@@ -1840,43 +1418,6 @@ MonoBehaviour:
   m_SnapCollider: {fileID: 1069081911}
   m_DisableSnapColliderWhenSelected: 1
   m_SnapToCollider: {fileID: 0}
---- !u!1 &1161410008
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1161410009}
-  m_Layer: 0
-  m_Name: Meshes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1161410009
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161410008}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 565558930}
-  - {fileID: 1844980551}
-  - {fileID: 948579420}
-  - {fileID: 3884842801741150162}
-  - {fileID: 2312286079257468472}
-  - {fileID: 1632361043}
-  m_Father: {fileID: 454844441}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1169920385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,203 +1450,6 @@ Transform:
   - {fileID: 1241364537}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1191309495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1191309496}
-  - component: {fileID: 1191309498}
-  - component: {fileID: 1191309497}
-  m_Layer: 0
-  m_Name: Convert Four to Arrow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1191309496
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191309495}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1308148263}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1191309497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191309495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb5cb947a5cc0a4f80fb57714d5cd35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_onLeftForward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1191309498}
-        m_TargetAssemblyTypeName: ConvertTankFourInputToArrowMono, Assembly-CSharp
-        m_MethodName: OnLeftForward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onLeftBackward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1191309498}
-        m_TargetAssemblyTypeName: ConvertTankFourInputToArrowMono, Assembly-CSharp
-        m_MethodName: OnLeftBackward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onRightForward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1191309498}
-        m_TargetAssemblyTypeName: ConvertTankFourInputToArrowMono, Assembly-CSharp
-        m_MethodName: OnRightForward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onRightBackward:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1191309498}
-        m_TargetAssemblyTypeName: ConvertTankFourInputToArrowMono, Assembly-CSharp
-        m_MethodName: OnRightBackward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_leftForward: 0
-  m_leftBackward: 0
-  m_rightForward: 0
-  m_rightBackward: 0
-  m_leftForwardPrevious: 0
-  m_leftBackwardPrevious: 0
-  m_rightForwardPrevious: 0
-  m_rightBackwardPrevious: 0
---- !u!114 &1191309498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191309495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6fa954c96aabf24793c59be17c5e970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_onUp:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveForward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onDown:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveBackward
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onLeft:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationLeft
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onRight:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationRight
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_leftForward: 0
-  m_leftBackward: 0
-  m_rightForward: 0
-  m_rightBackward: 0
-  m_up: 0
-  m_down: 0
-  m_left: 0
-  m_right: 0
-  m_upPrevious: 0
-  m_downPrevious: 0
-  m_leftPrevious: 0
-  m_rightPrevious: 0
 --- !u!1 &1241364534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 996bc95e1b6dfc847aead2de66dc4a91, type: 3}
@@ -2588,225 +1932,6 @@ MonoBehaviour:
   m_MinAngleAllowed: 0.1
   m_MaxAngleAllowed: 2
   m_TimeUntilThresholdReachesMaxAngle: 3
---- !u!1 &1308148262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1308148263}
-  - component: {fileID: 1308148264}
-  m_Layer: 0
-  m_Name: Player Input
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1308148263
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308148262}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1191309496}
-  m_Father: {fileID: 454844441}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1308148264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308148262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 34edb2247b7adb64db14ee40a40d6339, type: 3}
-  m_NotificationBehavior: 1
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: ResetToNotMoving
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationLeft
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_ActionId: 48da642b-7a29-48d6-b93e-d8c5b968cfc5
-    m_ActionName: CarRCKeyboardAll/LeftForward[/Keyboard/u,/Keyboard/a,/Keyboard/7]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: ResetToNotMoving
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveBackward
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_ActionId: 239f62ee-3a7d-4b99-81b5-e48d4b6eaf50
-    m_ActionName: CarRCKeyboardAll/LeftBacward[/Keyboard/j,/Keyboard/q,/Keyboard/4]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: ResetToNotMoving
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarRotationRight
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_ActionId: bcc431ac-8c23-4490-9ee2-f5008efa2161
-    m_ActionName: CarRCKeyboardAll/RightForward[/Keyboard/o,/Keyboard/e,/Keyboard/9]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: ResetToNotMoving
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 454844443}
-        m_TargetAssemblyTypeName: TankCarRCMono, Assembly-CSharp
-        m_MethodName: SetCarMoveForward
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_ActionId: dafdcbb0-3730-4afe-aeb1-ebdaa207cd03
-    m_ActionName: CarRCKeyboardAll/RightBacward[/Keyboard/l,/Keyboard/d,/Keyboard/6]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c3daaaa3-c8ee-4479-abf9-fde99d050529
-    m_ActionName: CarRCJoystickArrowAsInput/LeftForward[/1532-111/stick/up,/Shaul
-      Eizikovich vJoy - Virtual Joystick/stick/up,/Shaul Eizikovich vJoy - Virtual
-      Joystick1/stick/up,/DragonRise Inc.   Generic   USB  Joystick  /stick/up]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7bf54a52-eafd-4a85-b2e2-e8c10f7878f4
-    m_ActionName: CarRCJoystickArrowAsInput/LeftBacward[/1532-111/stick/left,/Shaul
-      Eizikovich vJoy - Virtual Joystick/stick/left,/Shaul Eizikovich vJoy - Virtual
-      Joystick1/stick/left,/DragonRise Inc.   Generic   USB  Joystick  /stick/left]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4c80893f-0215-4427-81fd-77c04f8204c8
-    m_ActionName: CarRCJoystickArrowAsInput/RightForward[/1532-111/stick/right,/Shaul
-      Eizikovich vJoy - Virtual Joystick/stick/right,/Shaul Eizikovich vJoy - Virtual
-      Joystick1/stick/right,/DragonRise Inc.   Generic   USB  Joystick  /stick/right]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e7b5c4ea-a730-43fd-b371-f4559a187933
-    m_ActionName: CarRCJoystickArrowAsInput/RightBacward[/1532-111/stick/down,/Shaul
-      Eizikovich vJoy - Virtual Joystick/stick/down,/Shaul Eizikovich vJoy - Virtual
-      Joystick1/stick/down,/DragonRise Inc.   Generic   USB  Joystick  /stick/down]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 431f6036-0d69-40d9-89d6-4eec375289a5
-    m_ActionName: CarRCJoystickvJoy/LeftForward[/Shaul Eizikovich vJoy - Virtual
-      Joystick/button2,/Shaul Eizikovich vJoy - Virtual Joystick1/button2]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ffe79b94-256b-4df7-aa0e-58dc92791996
-    m_ActionName: CarRCJoystickvJoy/LeftBacward[/Shaul Eizikovich vJoy - Virtual
-      Joystick/button3,/Shaul Eizikovich vJoy - Virtual Joystick1/button3]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9449cace-df7b-4d43-b0ad-7e01db0427c5
-    m_ActionName: CarRCJoystickvJoy/RightForward[/Shaul Eizikovich vJoy - Virtual
-      Joystick/button4,/Shaul Eizikovich vJoy - Virtual Joystick1/button4]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 49f28c8c-08ab-4a4d-b0ab-dff716a30d80
-    m_ActionName: CarRCJoystickvJoy/RightBacward[/Shaul Eizikovich vJoy - Virtual
-      Joystick/button5,/Shaul Eizikovich vJoy - Virtual Joystick1/button5]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: CarRCKeyboardAll
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &1358952311 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8204371881179850711, guid: 8b4d02b4e05af714dab2a12548a310f8, type: 3}
@@ -3402,13 +2527,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1586359205}
+  - component: {fileID: 1586359206}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1586359205
 Transform:
   m_ObjectHideFlags: 0
@@ -3424,6 +2550,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1586359206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586359204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa5a726c7fed2748bc68eb983a5361a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_joystick1Button1: 0
+  m_joystick2Button1: 0
+  m_joystick3Button1: 0
+  m_joystick4Button1: 0
 --- !u!1 &1615728349
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,111 +2603,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9176281889616400641, guid: 66d40221d132d04499855da9ce315f20, type: 3}
   m_PrefabInstance: {fileID: 1364055689}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1632361042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632361043}
-  - component: {fileID: 1632361046}
-  - component: {fileID: 1632361045}
-  - component: {fileID: 1632361044}
-  m_Layer: 0
-  m_Name: Body
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1632361043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632361042}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.072663, y: 0.0436795, z: 0.1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1161410009}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1632361044
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632361042}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1632361045
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632361042}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1632361046
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1632361042}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1681329295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,72 +2936,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843087091}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &1844980550
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1161410009}
-    m_Modifications:
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.010383997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0508918
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.000049233437
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.04519999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071066
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.70710707
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015918679639073035, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_Name
-      value: RC Car Wheel (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
---- !u!4 &1844980551 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-  m_PrefabInstance: {fileID: 1844980550}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1845371754
 GameObject:
   m_ObjectHideFlags: 0
@@ -4102,6 +3073,162 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1849673240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849673242}
+  - component: {fileID: 1849673241}
+  m_Layer: 0
+  m_Name: Decode Network Message
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1849673241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849673240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284b4e7c30f89f448be6ace7deac7f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onEventReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  m_playersInGame:
+  - m_playerPassword: A
+    m_playerNetworkId: J1
+    m_playerButtonState:
+      m_playerId: J1
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: B
+    m_playerNetworkId: J2
+    m_playerButtonState:
+      m_playerId: J2
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: kPXn8UVj
+    m_playerNetworkId: J3
+    m_playerButtonState:
+      m_playerId: J3
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: rreJQvqM
+    m_playerNetworkId: J4
+    m_playerButtonState:
+      m_playerId: J4
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: 9eAEFvTE
+    m_playerNetworkId: J5
+    m_playerButtonState:
+      m_playerId: J5
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: 2ABsUVbc
+    m_playerNetworkId: J6
+    m_playerButtonState:
+      m_playerId: J6
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: vxEkS2hh
+    m_playerNetworkId: J7
+    m_playerButtonState:
+      m_playerId: J7
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: mppcNVBb
+    m_playerNetworkId: J8
+    m_playerButtonState:
+      m_playerId: J8
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: WEMZ221v
+    m_playerNetworkId: J9
+    m_playerButtonState:
+      m_playerId: J9
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: MtAbzAZs
+    m_playerNetworkId: J10
+    m_playerButtonState:
+      m_playerId: J10
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: DWqceWWY
+    m_playerNetworkId: J11
+    m_playerButtonState:
+      m_playerId: J11
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+  - m_playerPassword: mtk5Sx7p
+    m_playerNetworkId: J12
+    m_playerButtonState:
+      m_playerId: J12
+      m_buttonStateOfPlayer:
+        m_leftForward: 0
+        m_leftBackward: 0
+        m_rightForward: 0
+        m_rightBackward: 0
+--- !u!4 &1849673242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849673240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.111906946, y: 1.254122, z: 2.1147778}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1891673207 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7800413991915503276, guid: 69eb4eecbd2100a408ab74fc543b405c, type: 3}
@@ -4284,6 +3411,77 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4941219564456579801, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
   m_PrefabInstance: {fileID: 357356506}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2032201241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032201243}
+  - component: {fileID: 2032201242}
+  m_Layer: 0
+  m_Name: 'Player Button State Relay '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2032201242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032201241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53570d2100b936a4c82d8ff386701fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerRelay:
+  - m_userId: J1
+    m_relay: {fileID: 0}
+  - m_userId: J2
+    m_relay: {fileID: 0}
+  - m_userId: J3
+    m_relay: {fileID: 0}
+  - m_userId: J4
+    m_relay: {fileID: 0}
+  - m_userId: J5
+    m_relay: {fileID: 0}
+  - m_userId: J6
+    m_relay: {fileID: 0}
+  - m_userId: J7
+    m_relay: {fileID: 0}
+  - m_userId: J8
+    m_relay: {fileID: 0}
+  - m_userId: J9
+    m_relay: {fileID: 0}
+  - m_userId: J10
+    m_relay: {fileID: 0}
+  - m_userId: J11
+    m_relay: {fileID: 0}
+  - m_userId: J12
+    m_relay: {fileID: 0}
+  - m_userId: J13
+    m_relay: {fileID: 0}
+--- !u!4 &2032201243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032201241}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.111906946, y: 1.254122, z: 2.1147778}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045847665
 GameObject:
   m_ObjectHideFlags: 0
@@ -5183,72 +4381,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &2312286079257468471
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1161410009}
-    m_Modifications:
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.010383997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.04935
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.038300037
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071066
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.70710707
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015918679639073035, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_Name
-      value: RC Car Wheel
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
---- !u!4 &2312286079257468472 stripped
+--- !u!4 &2319808054486969202
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-  m_PrefabInstance: {fileID: 2312286079257468471}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082494528024615056}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2653560369794757488}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!223 &2334947568271374288
 Canvas:
   m_ObjectHideFlags: 0
@@ -5272,6 +4419,172 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &2653560369295313676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2653560369295313679}
+  m_Layer: 0
+  m_Name: UDPThreadManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2653560369295313679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2653560369295313676}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 617.38495, y: 506.36798, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2653560369794757488}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2653560369794757488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2653560369794757494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2319808054486969202}
+  m_Father: {fileID: 2653560369295313679}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2653560369794757494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2653560369794757488}
+  - component: {fileID: 2653560369794757495}
+  m_Layer: 0
+  m_Name: Receiver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2653560369794757495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2653560369794757494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b87c8eda2743834e9ff6518287d1ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_portId: 4501
+  m_timeBetweenUnityCheck: 0.01
+  m_messageReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8082494528024615056}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1849673241}
+        m_TargetAssemblyTypeName: DecodeNetworkListenerMsgMono, Assembly-CSharp
+        m_MethodName: TryToDecodeMessageAsCommand
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_threadPriority: 2
+  m_lastReceived: 
+  m_hasBeenKilled: 0
+--- !u!1001 &2660570449186402751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4670099049174696826, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_Name
+      value: Car RC
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669580377944068339, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad90d76a2de752447934114fdd4901aa, type: 3}
 --- !u!114 &2665906517931506343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5395,72 +4708,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!1001 &3884842801741150161
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1161410009}
-    m_Modifications:
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.010383997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0508918
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.000049233437
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.038300037
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071066
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.70710707
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015918679639073035, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-      propertyPath: m_Name
-      value: RC Car Wheel (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
---- !u!4 &3884842801741150162 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4598279200115979834, guid: 63f7e1ad82efd0643ab761f58c80346b, type: 3}
-  m_PrefabInstance: {fileID: 3884842801741150161}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4115606890930286726
 Transform:
   m_ObjectHideFlags: 0
@@ -6241,6 +5488,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -81.000015}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &8082494528024615056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2319808054486969202}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &8845256486159989924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6387,8 +5650,12 @@ SceneRoots:
   - {fileID: 2073726594}
   - {fileID: 1169920386}
   - {fileID: 1615728350}
-  - {fileID: 454844441}
+  - {fileID: 400913907}
+  - {fileID: 2660570449186402751}
   - {fileID: 2045847669}
   - {fileID: 1681329296}
   - {fileID: 831045309}
   - {fileID: 1586359205}
+  - {fileID: 2653560369295313679}
+  - {fileID: 1849673242}
+  - {fileID: 2032201243}
