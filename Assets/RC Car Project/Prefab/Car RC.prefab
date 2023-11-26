@@ -776,8 +776,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_whatToMove: {fileID: 5669580377944068339}
   m_timepast: 0
-  m_carSpeedPerSecond: 0.3
-  m_rotationPerSecondAsAngle: 180
+  m_carSpeedPerSecond: 1
+  m_rotationPerSecondAsAngle: 120
   m_makeCarMoveForward: 0
   m_makeCarMoveBackward: 0
   m_makeCarRotateLeft: 0
