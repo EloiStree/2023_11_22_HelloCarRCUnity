@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3984057176865457802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3136477756342315479}
+  - component: {fileID: 3938776328062997882}
+  - component: {fileID: 4103405778106045192}
+  - component: {fileID: 98925616236753734}
+  m_Layer: 0
+  m_Name: Player One RC (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3136477756342315479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984057176865457802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3938776328062997882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984057176865457802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9315d1336c9f47344bd10c4ecd3be5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onNamedBooleanChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4103405778106045192}
+        m_TargetAssemblyTypeName: NamedBooleanToEventRelayMono, Assembly-CSharp
+        m_MethodName: Push
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_player:
+  - m_playerIndex: 0
+    m_boolObserved:
+    - m_name: XJRB
+      m_value: 8
+      m_debugValue: 0
+    - m_name: XJRF
+      m_value: 9
+      m_debugValue: 0
+    - m_name: XJLF
+      m_value: 10
+      m_debugValue: 0
+    - m_name: XJLB
+      m_value: 11
+      m_debugValue: 0
+    - m_name: XJLB
+      m_value: 1
+      m_debugValue: 0
+    - m_name: XJRB
+      m_value: 0
+      m_debugValue: 0
+    - m_name: XJLF
+      m_value: 3
+      m_debugValue: 0
+    - m_name: XJRF
+      m_value: 2
+      m_debugValue: 0
+    - m_name: XJLB
+      m_value: 4
+      m_debugValue: 0
+    - m_name: XJLF
+      m_value: 6
+      m_debugValue: 0
+    - m_name: XJRF
+      m_value: 5
+      m_debugValue: 0
+    - m_name: XJRB
+      m_value: 7
+      m_debugValue: 0
+    m_floatObserved: []
+  m_useUnityRefreshHardware: 1
+  m_timeBetweenRefreshInMs: 30
+--- !u!114 &4103405778106045192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984057176865457802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab443340d11457449fe48e438eafc85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_relay:
+  - m_namedId: XJLF
+    m_onBooleanEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 98925616236753734}
+          m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+          m_MethodName: SetLeftForwardAndPush
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - m_namedId: XJLB
+    m_onBooleanEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 98925616236753734}
+          m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+          m_MethodName: SetLeftBackwardAndPush
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - m_namedId: XJRF
+    m_onBooleanEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 98925616236753734}
+          m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+          m_MethodName: SetRightForwardAndPush
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - m_namedId: XJRB
+    m_onBooleanEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 98925616236753734}
+          m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+          m_MethodName: SetRightBackwardAndPush
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &98925616236753734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984057176865457802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ecdc85cf07221459ec72c2463d17e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onRelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayerTankCarButtonStateRelayMono, Assembly-CSharp
+        m_MethodName: Push
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_generatedToPush:
+    m_playerId: 
+    m_buttonStateOfPlayer:
+      m_leftForward: 0
+      m_leftBackward: 0
+      m_rightForward: 0
+      m_rightBackward: 0

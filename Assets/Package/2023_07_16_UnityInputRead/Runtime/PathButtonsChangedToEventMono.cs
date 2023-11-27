@@ -33,7 +33,7 @@ public class PathButtonsChangedToEventMono : MonoBehaviour, I_IN_HIDButtonChange
                 {
                     if (button.m_buttonName.Trim().ToLower() == buttonChanged.m_booleanThatChanged.m_givenIdName.Trim().ToLower()) {
                         button.m_onChanged.Invoke(buttonChanged.m_booleanThatChanged.m_value);
-                        Debug.Log("Test " + JsonUtility.ToJson( buttonChanged.m_deviceInfo,true));
+                       // Debug.Log("Test " + JsonUtility.ToJson( buttonChanged.m_deviceInfo,true));
                     }
                 }
             }
