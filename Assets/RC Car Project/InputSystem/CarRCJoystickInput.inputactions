@@ -40,6 +40,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "temp",
+                    "type": "Button",
+                    "id": "667e9258-fd61-482b-a888-40d8613cd5e2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -67,30 +76,8 @@
                 },
                 {
                     "name": "",
-                    "id": "1dbe8ea2-c65a-4260-84ae-dee871f83570",
-                    "path": "<Keyboard>/7",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftForward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "6700eeed-2636-49b5-b8f0-80f84a5c729c",
-                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftForward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3d5e7383-dbde-4b3c-8146-e06102c2250e",
-                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -144,30 +131,8 @@
                 },
                 {
                     "name": "",
-                    "id": "ddba2721-cdd0-4c9f-8d5c-8bad7fcbf389",
-                    "path": "<Keyboard>/4",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftBackward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "af8acd0c-ce09-4e4f-9e86-4bbf88dfec99",
                     "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightForward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5c98387d-0e53-4de8-81a6-232a8a212ef9",
-                    "path": "<Keyboard>/9",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -188,19 +153,8 @@
                 },
                 {
                     "name": "",
-                    "id": "5b1bbea8-257d-4b32-9274-0b537357ac49",
-                    "path": "<Keyboard>/6",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightBackward",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "e9ae39ac-16b9-4736-916b-9477ab1bf481",
-                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -211,7 +165,7 @@
                 {
                     "name": "",
                     "id": "5c0fb829-a30f-4954-9e05-6f2ab62acef3",
-                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -222,11 +176,22 @@
                 {
                     "name": "",
                     "id": "38e4b56c-2d75-438e-b79e-a3afb18f0c65",
-                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "RightBackward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d5e7383-dbde-4b3c-8146-e06102c2250e",
+                    "path": "<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "temp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -237,7 +202,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftBackward",
+                    "action": "temp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -248,7 +213,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightForward",
+                    "action": "temp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -259,7 +224,51 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightBackward",
+                    "action": "temp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1dbe8ea2-c65a-4260-84ae-dee871f83570",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "temp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ddba2721-cdd0-4c9f-8d5c-8bad7fcbf389",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "temp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c98387d-0e53-4de8-81a6-232a8a212ef9",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "temp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b1bbea8-257d-4b32-9274-0b537357ac49",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "temp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

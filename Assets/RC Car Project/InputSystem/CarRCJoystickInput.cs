@@ -62,6 +62,15 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""temp"",
+                    ""type"": ""Button"",
+                    ""id"": ""667e9258-fd61-482b-a888-40d8613cd5e2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -89,30 +98,8 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1dbe8ea2-c65a-4260-84ae-dee871f83570"",
-                    ""path"": ""<Keyboard>/7"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftForward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""6700eeed-2636-49b5-b8f0-80f84a5c729c"",
-                    ""path"": ""<XRController>{LeftHand}/{PrimaryButton}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftForward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3d5e7383-dbde-4b3c-8146-e06102c2250e"",
-                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3"",
+                    ""path"": ""<XRController>{LeftHand}/{SecondaryButton}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -166,30 +153,8 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ddba2721-cdd0-4c9f-8d5c-8bad7fcbf389"",
-                    ""path"": ""<Keyboard>/4"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftBackward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""af8acd0c-ce09-4e4f-9e86-4bbf88dfec99"",
                     ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightForward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5c98387d-0e53-4de8-81a6-232a8a212ef9"",
-                    ""path"": ""<Keyboard>/9"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -210,19 +175,8 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""5b1bbea8-257d-4b32-9274-0b537357ac49"",
-                    ""path"": ""<Keyboard>/6"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightBackward"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""e9ae39ac-16b9-4736-916b-9477ab1bf481"",
-                    ""path"": ""<XRController>{RightHand}/{PrimaryButton}"",
+                    ""path"": ""<XRController>{RightHand}/{SecondaryButton}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -233,7 +187,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""5c0fb829-a30f-4954-9e05-6f2ab62acef3"",
-                    ""path"": ""<XRController>{RightHand}/{SecondaryButton}"",
+                    ""path"": ""<XRController>{LeftHand}/{PrimaryButton}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -244,11 +198,22 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""38e4b56c-2d75-438e-b79e-a3afb18f0c65"",
-                    ""path"": ""<XRController>{RightHand}/{SecondaryButton}"",
+                    ""path"": ""<XRController>{RightHand}/{PrimaryButton}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""RightBackward"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3d5e7383-dbde-4b3c-8146-e06102c2250e"",
+                    ""path"": ""<HID::DragonRise Inc.   Generic   USB  Joystick  >/button3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""temp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -259,7 +224,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftBackward"",
+                    ""action"": ""temp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -270,7 +235,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""RightForward"",
+                    ""action"": ""temp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -281,7 +246,51 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""RightBackward"",
+                    ""action"": ""temp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1dbe8ea2-c65a-4260-84ae-dee871f83570"",
+                    ""path"": ""<Keyboard>/7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""temp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ddba2721-cdd0-4c9f-8d5c-8bad7fcbf389"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""temp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5c98387d-0e53-4de8-81a6-232a8a212ef9"",
+                    ""path"": ""<Keyboard>/9"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""temp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5b1bbea8-257d-4b32-9274-0b537357ac49"",
+                    ""path"": ""<Keyboard>/6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""temp"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -472,6 +481,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
         m_CarRCFourBoolAll_LeftBackward = m_CarRCFourBoolAll.FindAction("LeftBackward", throwIfNotFound: true);
         m_CarRCFourBoolAll_RightForward = m_CarRCFourBoolAll.FindAction("RightForward", throwIfNotFound: true);
         m_CarRCFourBoolAll_RightBackward = m_CarRCFourBoolAll.FindAction("RightBackward", throwIfNotFound: true);
+        m_CarRCFourBoolAll_temp = m_CarRCFourBoolAll.FindAction("temp", throwIfNotFound: true);
         // CarRCJoystickArrowAsInput
         m_CarRCJoystickArrowAsInput = asset.FindActionMap("CarRCJoystickArrowAsInput", throwIfNotFound: true);
         m_CarRCJoystickArrowAsInput_LeftForward = m_CarRCJoystickArrowAsInput.FindAction("LeftForward", throwIfNotFound: true);
@@ -549,6 +559,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_CarRCFourBoolAll_LeftBackward;
     private readonly InputAction m_CarRCFourBoolAll_RightForward;
     private readonly InputAction m_CarRCFourBoolAll_RightBackward;
+    private readonly InputAction m_CarRCFourBoolAll_temp;
     public struct CarRCFourBoolAllActions
     {
         private @CarRCJoystickInput m_Wrapper;
@@ -557,6 +568,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
         public InputAction @LeftBackward => m_Wrapper.m_CarRCFourBoolAll_LeftBackward;
         public InputAction @RightForward => m_Wrapper.m_CarRCFourBoolAll_RightForward;
         public InputAction @RightBackward => m_Wrapper.m_CarRCFourBoolAll_RightBackward;
+        public InputAction @temp => m_Wrapper.m_CarRCFourBoolAll_temp;
         public InputActionMap Get() { return m_Wrapper.m_CarRCFourBoolAll; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -578,6 +590,9 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
             @RightBackward.started += instance.OnRightBackward;
             @RightBackward.performed += instance.OnRightBackward;
             @RightBackward.canceled += instance.OnRightBackward;
+            @temp.started += instance.OnTemp;
+            @temp.performed += instance.OnTemp;
+            @temp.canceled += instance.OnTemp;
         }
 
         private void UnregisterCallbacks(ICarRCFourBoolAllActions instance)
@@ -594,6 +609,9 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
             @RightBackward.started -= instance.OnRightBackward;
             @RightBackward.performed -= instance.OnRightBackward;
             @RightBackward.canceled -= instance.OnRightBackward;
+            @temp.started -= instance.OnTemp;
+            @temp.performed -= instance.OnTemp;
+            @temp.canceled -= instance.OnTemp;
         }
 
         public void RemoveCallbacks(ICarRCFourBoolAllActions instance)
@@ -757,6 +775,7 @@ public partial class @CarRCJoystickInput: IInputActionCollection2, IDisposable
         void OnLeftBackward(InputAction.CallbackContext context);
         void OnRightForward(InputAction.CallbackContext context);
         void OnRightBackward(InputAction.CallbackContext context);
+        void OnTemp(InputAction.CallbackContext context);
     }
     public interface ICarRCJoystickArrowAsInputActions
     {

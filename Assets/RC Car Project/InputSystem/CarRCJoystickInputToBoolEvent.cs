@@ -28,7 +28,7 @@ public class CarRCJoystickInputToBoolEvent : MonoBehaviour
 
     public void CheckForChange(ref bool target, InputAction.CallbackContext context) {
         SavePreviousState();
-        target = context.ReadValueAsButton();
+        target = context.ReadValue<float>()>0.5f;
         CheckForModification();
     }
 
