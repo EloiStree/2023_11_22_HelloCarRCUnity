@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4926127616832362952}
   - component: {fileID: 8193419204924978466}
   - component: {fileID: 8198892608496827830}
+  - component: {fileID: 2070498337291581235}
+  - component: {fileID: 372846634360578937}
   m_Layer: 0
   m_Name: Joy to Car RC 01
   m_TagString: Untagged
@@ -164,3 +166,200 @@ MonoBehaviour:
       m_leftBackward: 0
       m_rightForward: 0
       m_rightBackward: 0
+--- !u!114 &2070498337291581235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101609830831318561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b1eefd46876344c8b651ab9b85b594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onLeftForward:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8198892608496827830}
+        m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+        m_MethodName: SetLeftForwardAndPush
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onLeftBackward:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8198892608496827830}
+        m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+        m_MethodName: SetLeftBackwardAndPush
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onRightForward:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8198892608496827830}
+        m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+        m_MethodName: SetRightForwardAndPush
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onRightBackward:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8198892608496827830}
+        m_TargetAssemblyTypeName: PlayerTankCarButtonStateGeneratorMono, Assembly-CSharp
+        m_MethodName: SetRightBackwardAndPush
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_up: 0
+  m_down: 0
+  m_left: 0
+  m_right: 0
+  m_leftForward: 0
+  m_leftBackward: 0
+  m_rightForward: 0
+  m_rightBackward: 0
+  m_leftForwardPrevious: 0
+  m_leftBackwardPrevious: 0
+  m_rightForwardPrevious: 0
+  m_rightBackwardPrevious: 0
+--- !u!114 &372846634360578937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101609830831318561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51ab9f8f5c82fe42aab85fbbb4df4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sourceObserver: {fileID: 0}
+  m_observedDevices:
+  - m_targetPath: /DragonRise Inc.   Generic   USB  Joystick  2
+    m_buttonsObserved:
+    - m_axisName: stick x
+      m_betweenLimitA: -1
+      m_betweenLimitB: -0.8
+      m_onInLimitChanged:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2070498337291581235}
+            m_TargetAssemblyTypeName: ConvertArrowToTankFourInputMono, Assembly-CSharp
+            m_MethodName: SetAsLeft
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      m_current: 0
+      m_previous: 0
+      m_inLimit: 0
+      m_inLimitPrevious: 0
+      m_idPath: 
+      m_isFound: 0
+    - m_axisName: stick x
+      m_betweenLimitA: 1
+      m_betweenLimitB: 0.8
+      m_onInLimitChanged:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2070498337291581235}
+            m_TargetAssemblyTypeName: ConvertArrowToTankFourInputMono, Assembly-CSharp
+            m_MethodName: SetAsRight
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      m_current: -1
+      m_previous: -0.8
+      m_inLimit: 0
+      m_inLimitPrevious: 0
+      m_idPath: 
+      m_isFound: 0
+    - m_axisName: stick y
+      m_betweenLimitA: -1
+      m_betweenLimitB: -0.8
+      m_onInLimitChanged:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2070498337291581235}
+            m_TargetAssemblyTypeName: ConvertArrowToTankFourInputMono, Assembly-CSharp
+            m_MethodName: SetAsBackward
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      m_current: 1
+      m_previous: 0.8
+      m_inLimit: 0
+      m_inLimitPrevious: 0
+      m_idPath: 
+      m_isFound: 0
+    - m_axisName: stick y
+      m_betweenLimitA: 1
+      m_betweenLimitB: 0.8
+      m_onInLimitChanged:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2070498337291581235}
+            m_TargetAssemblyTypeName: ConvertArrowToTankFourInputMono, Assembly-CSharp
+            m_MethodName: SetAsForward
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      m_current: 0
+      m_previous: 0
+      m_inLimit: 0
+      m_inLimitPrevious: 0
+      m_idPath: 
+      m_isFound: 0
+  m_useUpdateToRefresh: 1

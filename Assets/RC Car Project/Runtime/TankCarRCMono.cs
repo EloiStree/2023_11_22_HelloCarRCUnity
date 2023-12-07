@@ -22,6 +22,8 @@ public class TankCarRCMono : MonoBehaviour
 
     void Update()
     {
+        if (!enabled || !gameObject.activeInHierarchy)
+            return;
         float timePast = Time.deltaTime;
         m_timepast = timePast;
         Vector3 whereIsTheCar = m_whatToMove.position;
