@@ -213,14 +213,16 @@ public class XInputToBooleanMono : MonoBehaviour
             this.m_name = booleanName;
         }
     }
+
+    [System.Serializable]
+    public class FloatValue
+    {
+        public float m_minValue = 0, m_maxValue = 1;
+        public XInputFloatableValue m_target;
+    }
+
 }
 
-
-[System.Serializable]
-public class FloatValue {
-    public float m_minValue=0, m_maxValue=1;
-    public XInputFloatableValue m_target;
-}
 
 public enum XInputFloatableValue { 
     TriggerLeft,

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct TankCarButtonState 
+public struct TankCarButtonState
 {
     public bool m_leftForward;
     public bool m_leftBackward;
@@ -11,3 +11,5 @@ public struct TankCarButtonState
     public bool m_rightBackward;
 
 }
+
+
