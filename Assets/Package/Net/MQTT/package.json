@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.m2mqtt",                              
+  "displayName": "M2MQTT",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "M2Mqtt package mirror of the official git. Use to have Android and Window tool for MQTT.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2023_12_13_Fork_M2MqttUnity.git",
+"footprint":"",
+"revision":"6a90f63bc1617a2f79d2686c6beca06070f525cf"},     
+  "category": "Script"                   
+} 
