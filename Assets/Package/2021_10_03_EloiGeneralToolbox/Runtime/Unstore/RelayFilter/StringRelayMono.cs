@@ -12,6 +12,8 @@ public class StringRelayMono : MonoBehaviour
     {
         PushInTextToRelay("");
     }
+
+
     [ContextMenu("Push With Null")]
     public void PushWithNull()
     {
